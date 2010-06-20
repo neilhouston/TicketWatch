@@ -1,0 +1,29 @@
+!!! XML
+!!!
+%html
+  %head
+    %title=  "TicketWatch"
+ %link{ :rel => 'stylesheet', :type => 'text/css', :href => '/grid.css' }
+ 
+
+  %body
+    .container_12
+      .grid_12
+        %p.highlight.hidden This is a test website, in change, figures are not verified
+          TicketWatch
+          %sup
+            %span{ :style => "font-size: 40%; text-transform: uppercase; vertical-align: top; line-height: 100%;" }
+              Alpha
+          %span{ :style => "color: #777; font-size: 60%; padding-left: 20px;" }
+            Some Information about the data:
+        #nav.noprint
+          %a{ :href => '/' } Home
+          %a{ :href => '/about' } About
+      = yield
+      .clear  
+      #footer
+        .grid_12.top_border
+          %p
+            Made by 
+            %a{ :href => 'http://rasga.co.uk/' }
+              Neil

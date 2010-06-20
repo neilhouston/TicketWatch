@@ -1,0 +1,30 @@
+!!!
+%html
+	%head
+		%title Ticket Watch
+		%link{ :rel => 'stylesheet', :type => 'text/css', :href => '/grid.css' }
+		%link{ :rel => 'stylesheet', :type => 'text/css', :href => '/style.css' }
+	%body
+.container_12
+	.grid_12
+		%p.highlight.hidden This is a demonstration website of &quot;alpha&quot; quality &mdash; 
+		%h1.logo
+			Ticket Watch
+			%sup
+				%span{ :style => "font-size: 40%; text-transform: uppercase; vertical-align: top; line-height: 100%;" }
+					Alpha
+		#nav.noprint
+			%a{ :href => '/' } Home
+			%a{ :href => '/about' } About
+		= yield
+		.clear  
+		#footer
+		.grid_12.top_border
+		%p
+			Made by
+			%a{ :href => 'http://rasga.co.uk/' }
+				Neil
+			%br/
+			Inspired by
+			%a{ :href => 'http://adrianshort.co.uk/' }
+				Adrian Short
